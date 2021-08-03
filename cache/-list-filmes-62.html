@@ -1,0 +1,405 @@
+
+<!DOCTYPE html>
+<html lang="pt_BR" class="no-js" prefix="og: http://ogp.me/ns#">
+    <head>
+        <title>TopFlix - Todos os Filmes</title>
+        <meta charset="UTF-8">
+        <meta name="robots" content="index, follow">
+        <meta name="description" content="Pesquisar filmes online, buscar filmes online, procurar filmes online, ver filmes online gr&aacute;tis, ver filmes online hd, assistir filmes online dublado, assistir filmes online legendado, assistir filmes online hd, assistir filmes online 720p, assistir filmes online 1080p, assistir filmes online gr&aacute;tis, assistir filmes netflix, topflix ver filmes, topflix assistir filmes online, topflix assistir filmes gr&aacute;tis, topflix ver filmes gr&aacute;tis">
+        <meta name="keywords" content="Topflix, Filmes online, Séries online, Filme online, Séries online, Filmes dublado, Filmes legendado, Séries dublado, Séries legendado, Filmes online dublado, Filmes grátis, Assistir filmes, Assistir filmes online, Assistir filmes grátis, Assistir filmes dublado, Assistir filmes legendado, Assistir séries grátis, Assistir séries dublado, Assistir séries legendado, TopFlix, TopFlix filmes, TopFlix séries, Assistir TopFlix, Assistir filmes 1080p, Assistir filmes 720p, Assistir filmes no celular, Assistir filmes mobile, Assistir séries no celular, Netflix grátis">
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="TopFlix - Todos os Filmes" />
+        <meta property="og:description" content="Assistir Filmes e Séries Online Grátis em HD" />
+        <meta property="og:url" content="/" />
+        <meta property="og:site_name" content="TopFlix" />
+        <meta property="og:image" content="/logo1.png" />
+        <meta name="author" content="TopFlix">
+        <meta name="twitter:description" content="Pesquisar filmes online, buscar filmes online, procurar filmes online, ver filmes online gr&aacute;tis, ver filmes online hd, assistir filmes online dublado, assistir filmes online legendado, assistir filmes online hd, assistir filmes online 720p, assistir filmes online 1080p, assistir filmes online gr&aacute;tis, assistir filmes netflix, topflix ver filmes, topflix assistir filmes online, topflix assistir filmes gr&aacute;tis, topflix ver filmes gr&aacute;tis" />
+        <meta name="twitter:title" content="TopFlix - Todos os Filmes" />
+        <meta name="twitter:image" content="/images/logo1.png" />
+        <meta http-equiv="Cache-control" content="public">
+        <link rel="profile" href="#">
+        <link rel="shortcut icon" href="/images/favicon.ico" />
+        <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="format-detection" content="telephone-no">
+        <link rel="stylesheet" href="/css/plugins.css">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+
+    <body oncontextmenu="return false;">
+        <div id="preloader">
+            <img class="logo" src="/images/logo1.png" width="119" height="58">
+            <div id="status">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <style> @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {.slider .social-link {margin-right: 100px; } .movie-items .slick-slider {margin-left: 0px; margin-right: 100px; } } .overlayer {background-color: rgba(1, 1, 1, 0.7); bottom: 0; left: 0; position: fixed; right: 0; top: 0; } </style>
+
+        <header class="ht-header">
+            <div class="container">
+                <nav class="navbar navbar-default navbar-custom">
+                    <div class="navbar-header logo">
+                        <div class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Ocultar navegação</span>
+                            <div id="nav-icon1">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <a href="/"><img class="logo" id="logo" src="/images/logo1.png" width="119" height="58"></a>
+                    </div>
+                    <div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav flex-child-menu menu-left">
+                            <li class="hidden">
+                                <a href="#page-top"></a>
+                            </li>
+                            <li><a href="/">Home</a></li>
+                            <li class="dropdown first">
+                                <a class="btn btn-default dropdown" data-toggle="dropdown" data-hover="dropdown">Filmes<i class="fa fa-angle-down" aria-hidden="true" style="margin-left:7px"></i></a>
+                                <ul class="dropdown-menu level1">
+                                    <li><a href="/list/filmes/">Todos</a></li>
+                                    <li><a href="/list/filmes/Ação/1/">Ação</a></li>
+                                    <li><a href="/list/filmes/Animação/1/">Animação</a></li>
+                                    <li><a href="/list/filmes/Aventura/1/">Aventura</a></li>
+                                    <li><a href="/list/filmes/Comédia/1/">Comédia</a></li>
+                                    <li><a href="/list/filmes/Drama/1/">Drama</a></li>
+                                    <li><a href="/list/filmes/Ficção/1/">Ficção</a></li>
+                                    <li><a href="/list/filmes/Romance/1/">Romance</a></li>
+                                    <li><a href="/list/filmes/Suspense/1/">Suspense</a></li>
+                                    <li class="it-last"><a href="genero/Terror/">Terror</a></li>
+                                </ul>
+                            </li>
+                            <li><a target="_blank" href="https://maxseries.top">Séries</a></li>
+                            <li><a target="_blank" href="https://goyabu.org">Animes</a></li>
+                            <li><a href="/list/filmes/top-imdb/1/">Top IMDb</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <script type="text/javascript">
+                    function submitSearch() {
+                        window.location = `/list/filmes/${document.getElementById('input-search').value}/`;
+                        return false;
+                    }
+                </script>
+                
+                <form class="search" onsubmit="return submitSearch();">
+                    <div class="top-search" id="search">
+                        <input type="text" id="input-search" pattern=".{3,35}" required title="3 caracteres mínimos / 35 máximos" maxlenght="8" placeholder="Pesquise por filmes ou séries que deseja assistir">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                </form>
+            </div>
+        </header>
+
+        
+<div class="hero common-hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="hero-ct">
+                    <h1>NAVEGAR</h1>
+                    <div id="scrollInto"></div>
+                    <ul class="breadcumb">
+                        <li class="active"><a href="/">Home</a></li>
+                        <li> <span class="ion-ios-arrow-right"></span> Lista completa</li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page-single">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class='flex-wrap-movielist mv-grid-fw'>
+                		                    <div class='movie-item-style-2 movie-item-style-1'>
+	                        <div class='mv-img3'><a href='/media/assistir-online-all-that-jazz---o-show-deve-continuar/'><img src='https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png' style="width:100%;height:100%;object-fit:cover"></a></div>
+	                        <div class='hvr-inner'><a href='/media/assistir-online-all-that-jazz---o-show-deve-continuar/'> Assistir <i class='ion-android-arrow-dropright'></i> </a></div>
+	                        <div class='mv-item-infor'>
+	                            <h6><a href='/media/assistir-online-all-that-jazz---o-show-deve-continuar/' title='A 5ª Onda'>All That Jazz - O Show Deve Continuar</a></h6>
+	                            <p class='rate'><i class='ion-android-star'></i>7.8/10</p>
+	                        </div>
+	                    </div>
+                		                    <div class='movie-item-style-2 movie-item-style-1'>
+	                        <div class='mv-img3'><a href='/media/assistir-online-contatos-imediatos-de-terceiro-grau/'><img src='https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png' style="width:100%;height:100%;object-fit:cover"></a></div>
+	                        <div class='hvr-inner'><a href='/media/assistir-online-contatos-imediatos-de-terceiro-grau/'> Assistir <i class='ion-android-arrow-dropright'></i> </a></div>
+	                        <div class='mv-item-infor'>
+	                            <h6><a href='/media/assistir-online-contatos-imediatos-de-terceiro-grau/' title='A 5ª Onda'>Contatos Imediatos de Terceiro Grau</a></h6>
+	                            <p class='rate'><i class='ion-android-star'></i>7.7/10</p>
+	                        </div>
+	                    </div>
+                		                    <div class='movie-item-style-2 movie-item-style-1'>
+	                        <div class='mv-img3'><a href='/media/assistir-online-grease---nos-tempos-da-brilhantina/'><img src='https://m.media-amazon.com/images/M/MV5BZmUyMDEyOTgtZmUwOS00NTdkLThlNzctNTM1ODQ4M2VhMjdhXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg' style="width:100%;height:100%;object-fit:cover"></a></div>
+	                        <div class='hvr-inner'><a href='/media/assistir-online-grease---nos-tempos-da-brilhantina/'> Assistir <i class='ion-android-arrow-dropright'></i> </a></div>
+	                        <div class='mv-item-infor'>
+	                            <h6><a href='/media/assistir-online-grease---nos-tempos-da-brilhantina/' title='A 5ª Onda'>Grease - Nos Tempos da Brilhantina</a></h6>
+	                            <p class='rate'><i class='ion-android-star'></i>7.2/10</p>
+	                        </div>
+	                    </div>
+                		                    <div class='movie-item-style-2 movie-item-style-1'>
+	                        <div class='mv-img3'><a href='/media/assistir-online-halloween---a-noite-do-terror/'><img src='https://m.media-amazon.com/images/M/MV5BNzk1OGU2NmMtNTdhZC00NjdlLWE5YTMtZTQ0MGExZTQzOGQyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg' style="width:100%;height:100%;object-fit:cover"></a></div>
+	                        <div class='hvr-inner'><a href='/media/assistir-online-halloween---a-noite-do-terror/'> Assistir <i class='ion-android-arrow-dropright'></i> </a></div>
+	                        <div class='mv-item-infor'>
+	                            <h6><a href='/media/assistir-online-halloween---a-noite-do-terror/' title='A 5ª Onda'>Halloween - A Noite do Terror</a></h6>
+	                            <p class='rate'><i class='ion-android-star'></i>7.8/10</p>
+	                        </div>
+	                    </div>
+                		                    <div class='movie-item-style-2 movie-item-style-1'>
+	                        <div class='mv-img3'><a href='/media/assistir-online-star-wars-episodio-iv---uma-nova-esperanca/'><img src='https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png' style="width:100%;height:100%;object-fit:cover"></a></div>
+	                        <div class='hvr-inner'><a href='/media/assistir-online-star-wars-episodio-iv---uma-nova-esperanca/'> Assistir <i class='ion-android-arrow-dropright'></i> </a></div>
+	                        <div class='mv-item-infor'>
+	                            <h6><a href='/media/assistir-online-star-wars-episodio-iv---uma-nova-esperanca/' title='A 5ª Onda'>Star Wars: Episódio IV - Uma Nova Esperança</a></h6>
+	                            <p class='rate'><i class='ion-android-star'></i>8.6/10</p>
+	                        </div>
+	                    </div>
+                		                    <div class='movie-item-style-2 movie-item-style-1'>
+	                        <div class='mv-img3'><a href='/media/assistir-online-rede-de-intrigas/'><img src='https://m.media-amazon.com/images/M/MV5BZGNjYjM2MzItZGQzZi00NmY3LTgxOGUtMTQ2MWQxNWQ2MmMwXkEyXkFqcGdeQXVyNzM0MTUwNTY@._V1_.jpg' style="width:100%;height:100%;object-fit:cover"></a></div>
+	                        <div class='hvr-inner'><a href='/media/assistir-online-rede-de-intrigas/'> Assistir <i class='ion-android-arrow-dropright'></i> </a></div>
+	                        <div class='mv-item-infor'>
+	                            <h6><a href='/media/assistir-online-rede-de-intrigas/' title='A 5ª Onda'>Rede de Intrigas</a></h6>
+	                            <p class='rate'><i class='ion-android-star'></i>8.1/10</p>
+	                        </div>
+	                    </div>
+                		                    <div class='movie-item-style-2 movie-item-style-1'>
+	                        <div class='mv-img3'><a href='/media/assistir-online-funny-lady/'><img src='https://m.media-amazon.com/images/M/MV5BMGM1MzYzZjQtMzc2NS00ZjZlLWFmMTItNDExMjdhM2E3MGRlL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTEwMTkwOTI@._V1_.jpg' style="width:100%;height:100%;object-fit:cover"></a></div>
+	                        <div class='hvr-inner'><a href='/media/assistir-online-funny-lady/'> Assistir <i class='ion-android-arrow-dropright'></i> </a></div>
+	                        <div class='mv-item-infor'>
+	                            <h6><a href='/media/assistir-online-funny-lady/' title='A 5ª Onda'>Funny Lady</a></h6>
+	                            <p class='rate'><i class='ion-android-star'></i>6.4/10</p>
+	                        </div>
+	                    </div>
+                		                    <div class='movie-item-style-2 movie-item-style-1'>
+	                        <div class='mv-img3'><a href='/media/assistir-online-monty-python-em-busca-do-calice-sagrado/'><img src='https://m.media-amazon.com/images/M/MV5BN2IyNTE4YzUtZWU0Mi00MGIwLTgyMmQtMzQ4YzQxYWNlYWE2XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg' style="width:100%;height:100%;object-fit:cover"></a></div>
+	                        <div class='hvr-inner'><a href='/media/assistir-online-monty-python-em-busca-do-calice-sagrado/'> Assistir <i class='ion-android-arrow-dropright'></i> </a></div>
+	                        <div class='mv-item-infor'>
+	                            <h6><a href='/media/assistir-online-monty-python-em-busca-do-calice-sagrado/' title='A 5ª Onda'>Monty Python em Busca do Cálice Sagrado</a></h6>
+	                            <p class='rate'><i class='ion-android-star'></i>8.3/10</p>
+	                        </div>
+	                    </div>
+                		                    <div class='movie-item-style-2 movie-item-style-1'>
+	                        <div class='mv-img3'><a href='/media/assistir-online-a-ultima-missao/'><img src='https://m.media-amazon.com/images/M/MV5BNGI0M2M2MzgtZGVjYS00ODZkLWI4NTEtYzEyNzUzYzgxMTM2XkEyXkFqcGdeQXVyMjI4MjA5MzA@._V1_.jpg' style="width:100%;height:100%;object-fit:cover"></a></div>
+	                        <div class='hvr-inner'><a href='/media/assistir-online-a-ultima-missao/'> Assistir <i class='ion-android-arrow-dropright'></i> </a></div>
+	                        <div class='mv-item-infor'>
+	                            <h6><a href='/media/assistir-online-a-ultima-missao/' title='A 5ª Onda'>A Última Missão</a></h6>
+	                            <p class='rate'><i class='ion-android-star'></i>7.6/10</p>
+	                        </div>
+	                    </div>
+                		                    <div class='movie-item-style-2 movie-item-style-1'>
+	                        <div class='mv-img3'><a href='/media/assistir-online-o-sequestro-do-metro-123-1974/'><img src='https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png' style="width:100%;height:100%;object-fit:cover"></a></div>
+	                        <div class='hvr-inner'><a href='/media/assistir-online-o-sequestro-do-metro-123-1974/'> Assistir <i class='ion-android-arrow-dropright'></i> </a></div>
+	                        <div class='mv-item-infor'>
+	                            <h6><a href='/media/assistir-online-o-sequestro-do-metro-123-1974/' title='A 5ª Onda'>O Sequestro do Metro 123 (1974)</a></h6>
+	                            <p class='rate'><i class='ion-android-star'></i>7.7/10</p>
+	                        </div>
+	                    </div>
+                		                    <div class='movie-item-style-2 movie-item-style-1'>
+	                        <div class='mv-img3'><a href='/media/assistir-online-o-poderoso-chefao-2/'><img src='https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png' style="width:100%;height:100%;object-fit:cover"></a></div>
+	                        <div class='hvr-inner'><a href='/media/assistir-online-o-poderoso-chefao-2/'> Assistir <i class='ion-android-arrow-dropright'></i> </a></div>
+	                        <div class='mv-item-infor'>
+	                            <h6><a href='/media/assistir-online-o-poderoso-chefao-2/' title='A 5ª Onda'>O Poderoso Chefão 2</a></h6>
+	                            <p class='rate'><i class='ion-android-star'></i>9.0/10</p>
+	                        </div>
+	                    </div>
+                		                    <div class='movie-item-style-2 movie-item-style-1'>
+	                        <div class='mv-img3'><a href='/media/assistir-online-o-poderoso-chefao/'><img src='https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg' style="width:100%;height:100%;object-fit:cover"></a></div>
+	                        <div class='hvr-inner'><a href='/media/assistir-online-o-poderoso-chefao/'> Assistir <i class='ion-android-arrow-dropright'></i> </a></div>
+	                        <div class='mv-item-infor'>
+	                            <h6><a href='/media/assistir-online-o-poderoso-chefao/' title='A 5ª Onda'>O Poderoso Chefão</a></h6>
+	                            <p class='rate'><i class='ion-android-star'></i>9.2/10</p>
+	                        </div>
+	                    </div>
+                		                    <div class='movie-item-style-2 movie-item-style-1'>
+	                        <div class='mv-img3'><a href='/media/assistir-online-a-fantastica-fabrica-de-chocolate/'><img src='https://m.media-amazon.com/images/M/MV5BZTllNDU0ZTItYTYxMC00OTI4LThlNDAtZjNiNzdhMWZiYjNmXkEyXkFqcGdeQXVyNzY1NDgwNjQ@._V1_.jpg' style="width:100%;height:100%;object-fit:cover"></a></div>
+	                        <div class='hvr-inner'><a href='/media/assistir-online-a-fantastica-fabrica-de-chocolate/'> Assistir <i class='ion-android-arrow-dropright'></i> </a></div>
+	                        <div class='mv-item-infor'>
+	                            <h6><a href='/media/assistir-online-a-fantastica-fabrica-de-chocolate/' title='A 5ª Onda'>A Fantástica Fábrica de Chocolate</a></h6>
+	                            <p class='rate'><i class='ion-android-star'></i>7.8/10</p>
+	                        </div>
+	                    </div>
+                		                    <div class='movie-item-style-2 movie-item-style-1'>
+	                        <div class='mv-img3'><a href='/media/assistir-online-cada-um-vive-como-quer/'><img src='https://m.media-amazon.com/images/M/MV5BMTRiY2VkMjctNWQzZC00NjAyLTkzNjktYzAwN2M2ODNhOTA1XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg' style="width:100%;height:100%;object-fit:cover"></a></div>
+	                        <div class='hvr-inner'><a href='/media/assistir-online-cada-um-vive-como-quer/'> Assistir <i class='ion-android-arrow-dropright'></i> </a></div>
+	                        <div class='mv-item-infor'>
+	                            <h6><a href='/media/assistir-online-cada-um-vive-como-quer/' title='A 5ª Onda'>Cada um Vive Como Quer</a></h6>
+	                            <p class='rate'><i class='ion-android-star'></i>7.5/10</p>
+	                        </div>
+	                    </div>
+                		                    <div class='movie-item-style-2 movie-item-style-1'>
+	                        <div class='mv-img3'><a href='/media/assistir-online-oliver/'><img src='https://m.media-amazon.com/images/M/MV5BNWQwNTE4NWQtZDg0MC00ZDhkLWIzMzQtNDU1MDIxZTNmM2M3XkEyXkFqcGdeQXVyNjE5MjUyOTM@._V1_.jpg' style="width:100%;height:100%;object-fit:cover"></a></div>
+	                        <div class='hvr-inner'><a href='/media/assistir-online-oliver/'> Assistir <i class='ion-android-arrow-dropright'></i> </a></div>
+	                        <div class='mv-item-infor'>
+	                            <h6><a href='/media/assistir-online-oliver/' title='A 5ª Onda'>Oliver!</a></h6>
+	                            <p class='rate'><i class='ion-android-star'></i>7.5/10</p>
+	                        </div>
+	                    </div>
+                		                    <div class='movie-item-style-2 movie-item-style-1'>
+	                        <div class='mv-img3'><a href='/media/assistir-online-2001---uma-odisseia-no-espaco/'><img src='https://m.media-amazon.com/images/M/MV5BMmNlYzRiNDctZWNhMi00MzI4LThkZTctMTUzMmZkMmFmNThmXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg' style="width:100%;height:100%;object-fit:cover"></a></div>
+	                        <div class='hvr-inner'><a href='/media/assistir-online-2001---uma-odisseia-no-espaco/'> Assistir <i class='ion-android-arrow-dropright'></i> </a></div>
+	                        <div class='mv-item-infor'>
+	                            <h6><a href='/media/assistir-online-2001---uma-odisseia-no-espaco/' title='A 5ª Onda'>2001 - Uma Odisséia no Espaço</a></h6>
+	                            <p class='rate'><i class='ion-android-star'></i>8.3/10</p>
+	                        </div>
+	                    </div>
+                		                    <div class='movie-item-style-2 movie-item-style-1'>
+	                        <div class='mv-img3'><a href='/media/assistir-online-mogli---o-menino-lobo-1967/'><img src='https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png' style="width:100%;height:100%;object-fit:cover"></a></div>
+	                        <div class='hvr-inner'><a href='/media/assistir-online-mogli---o-menino-lobo-1967/'> Assistir <i class='ion-android-arrow-dropright'></i> </a></div>
+	                        <div class='mv-item-infor'>
+	                            <h6><a href='/media/assistir-online-mogli---o-menino-lobo-1967/' title='A 5ª Onda'>Mogli - O Menino Lobo 1967</a></h6>
+	                            <p class='rate'><i class='ion-android-star'></i>7.6/10</p>
+	                        </div>
+	                    </div>
+                		                    <div class='movie-item-style-2 movie-item-style-1'>
+	                        <div class='mv-img3'><a href='/media/assistir-online-o-abc-do-amor/'><img src='https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png' style="width:100%;height:100%;object-fit:cover"></a></div>
+	                        <div class='hvr-inner'><a href='/media/assistir-online-o-abc-do-amor/'> Assistir <i class='ion-android-arrow-dropright'></i> </a></div>
+	                        <div class='mv-item-infor'>
+	                            <h6><a href='/media/assistir-online-o-abc-do-amor/' title='A 5ª Onda'>O ABC do Amor</a></h6>
+	                            <p class='rate'><i class='ion-android-star'></i>4.9/10</p>
+	                        </div>
+	                    </div>
+                		                    <div class='movie-item-style-2 movie-item-style-1'>
+	                        <div class='mv-img3'><a href='/media/assistir-online-dr-fantastico/'><img src='https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png' style="width:100%;height:100%;object-fit:cover"></a></div>
+	                        <div class='hvr-inner'><a href='/media/assistir-online-dr-fantastico/'> Assistir <i class='ion-android-arrow-dropright'></i> </a></div>
+	                        <div class='mv-item-infor'>
+	                            <h6><a href='/media/assistir-online-dr-fantastico/' title='A 5ª Onda'>Dr. Fantastico</a></h6>
+	                            <p class='rate'><i class='ion-android-star'></i>8.5/10</p>
+	                        </div>
+	                    </div>
+                		                    <div class='movie-item-style-2 movie-item-style-1'>
+	                        <div class='mv-img3'><a href='/media/assistir-online-adeus-amor/'><img src='https://m.media-amazon.com/images/M/MV5BNzNkMzdlNzctMTI3MC00MjA1LThhOTUtZjQ5MjBkMmY2MDdkXkEyXkFqcGdeQXVyMTY5Nzc4MDY@._V1_.jpg' style="width:100%;height:100%;object-fit:cover"></a></div>
+	                        <div class='hvr-inner'><a href='/media/assistir-online-adeus-amor/'> Assistir <i class='ion-android-arrow-dropright'></i> </a></div>
+	                        <div class='mv-item-infor'>
+	                            <h6><a href='/media/assistir-online-adeus-amor/' title='A 5ª Onda'>Adeus, Amor</a></h6>
+	                            <p class='rate'><i class='ion-android-star'></i>6.7/10</p>
+	                        </div>
+	                    </div>
+                		                    <div class='movie-item-style-2 movie-item-style-1'>
+	                        <div class='mv-img3'><a href='/media/assistir-online-lawrence-da-arabia/'><img src='https://m.media-amazon.com/images/M/MV5BYWY5ZjhjNGYtZmI2Ny00ODM0LWFkNzgtZmI1YzA2N2MxMzA0XkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_.jpg' style="width:100%;height:100%;object-fit:cover"></a></div>
+	                        <div class='hvr-inner'><a href='/media/assistir-online-lawrence-da-arabia/'> Assistir <i class='ion-android-arrow-dropright'></i> </a></div>
+	                        <div class='mv-item-infor'>
+	                            <h6><a href='/media/assistir-online-lawrence-da-arabia/' title='A 5ª Onda'>Lawrence da Arábia</a></h6>
+	                            <p class='rate'><i class='ion-android-star'></i>8.3/10</p>
+	                        </div>
+	                    </div>
+                		                    <div class='movie-item-style-2 movie-item-style-1'>
+	                        <div class='mv-img3'><a href='/media/assistir-online-amigas-com-dinheiro/'><img src='https://m.media-amazon.com/images/M/MV5BMjE3Mjc3NjQ5NV5BMl5BanBnXkFtZTYwMjY5MjE3._V1_.jpg' style="width:100%;height:100%;object-fit:cover"></a></div>
+	                        <div class='hvr-inner'><a href='/media/assistir-online-amigas-com-dinheiro/'> Assistir <i class='ion-android-arrow-dropright'></i> </a></div>
+	                        <div class='mv-item-infor'>
+	                            <h6><a href='/media/assistir-online-amigas-com-dinheiro/' title='A 5ª Onda'>Amigas com Dinheiro</a></h6>
+	                            <p class='rate'><i class='ion-android-star'></i>5.8/10</p>
+	                        </div>
+	                    </div>
+                		                    <div class='movie-item-style-2 movie-item-style-1'>
+	                        <div class='mv-img3'><a href='/media/assistir-online-1984/'><img src='https://m.media-amazon.com/images/M/MV5BMWFkNzIzNDUtNWI1Mi00ODA2LTgyMTMtYTZiYWMxMDFlNmNhL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg' style="width:100%;height:100%;object-fit:cover"></a></div>
+	                        <div class='hvr-inner'><a href='/media/assistir-online-1984/'> Assistir <i class='ion-android-arrow-dropright'></i> </a></div>
+	                        <div class='mv-item-infor'>
+	                            <h6><a href='/media/assistir-online-1984/' title='A 5ª Onda'>1984</a></h6>
+	                            <p class='rate'><i class='ion-android-star'></i>7.0/10</p>
+	                        </div>
+	                    </div>
+                		                    <div class='movie-item-style-2 movie-item-style-1'>
+	                        <div class='mv-img3'><a href='/media/assistir-online-as-aventuras-de-peter-pan/'><img src='https://m.media-amazon.com/images/M/MV5BMzIwMzUyYTUtMjQ3My00NDc3LWIyZjQtOGUzNDJmNTFlNWUxXkEyXkFqcGdeQXVyMjA0MDQ0Mjc@._V1_.jpg' style="width:100%;height:100%;object-fit:cover"></a></div>
+	                        <div class='hvr-inner'><a href='/media/assistir-online-as-aventuras-de-peter-pan/'> Assistir <i class='ion-android-arrow-dropright'></i> </a></div>
+	                        <div class='mv-item-infor'>
+	                            <h6><a href='/media/assistir-online-as-aventuras-de-peter-pan/' title='A 5ª Onda'>As Aventuras de Peter Pan</a></h6>
+	                            <p class='rate'><i class='ion-android-star'></i>7.3/10</p>
+	                        </div>
+	                    </div>
+                	                </div>
+
+                                    <div class="topbar-filter">
+                        <label></label>
+                        <br><br>
+                        <div class='pagination2'>
+                            <span>Página 62 de 63</span> 
+
+                            
+                             
+                                <a href="/list/filmes/59/" >59</a> 
+                             
+                                <a href="/list/filmes/60/" >60</a> 
+                             
+                                <a href="/list/filmes/61/" >61</a> 
+                             
+                                <a href="/list/filmes/62/" style="color:#fff">62</a> 
+                            
+                             
+                                <a href="/list/filmes/63/" class="inactive">63</a>                             
+                                                             
+                                                            
+                            
+                            <a href="/list/filmes/63/"><i class="ion-arrow-right-b"></i></a>                        </div>
+                    </div>
+                            </div>
+        </div>
+    </div>
+</div>
+        
+        <footer class="ht-footer">
+            <div class="container">
+                <div class="flex-parent-ft">
+                    <div class="flex-child-ft item1">
+                        <a href="/"><img class="logo" src="/images/logo1.png"></a>
+                    </div>
+                    <div class="flex-child-ft item2">
+                        <h4>Navegue</h4>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/list/filmes/">Filmes</a></li>
+                            <li><a href="/list/filmes/top-imdb/">Top IMDb</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex-child-ft item4">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Termos de uso</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex-child-ft item5">
+                        <h4>Newsletter</h4>
+                        <p>Se inscreva em nosso sistema para receber as primeiras novidades</p>
+                        <form action="/#/" onkeypress="return event.keyCode != 13;" id="subscribe-form" name="subscribe-form" data-cf-modified-3ae26c814eeb7d3dff6b6bc3-="">
+                            <input type="email" name="emailSub" id="emailSub" placeholder="Insira seu endereço de email...">
+                        </form>
+                        <a type="submit" href="#/" class="btn" id="subscribe" name="subscribe">Inscrever agora <i class="ion-ios-arrow-forward"></i></a>
+                        <div id="subs"></div>
+                    </div>
+                </div>
+                <p style="text-align: center;">O TopFlix é uma plataforma de site & aplicativo para assistir filmes e séries online grátis! Nossa plataforma é um indexador automático. TopFlix não armazena filmes e/ou séries em nosso site/plataforma, por isso é completamente dentro da lei. TopFlix indexa conteúdo(s) encontrado(s) na web automáticamente usando Robots e Inteligência artificial (iA) & API IMDb. O uso do TopFlix é totalmente responsabilidade do usuário. A distribuição de filmes e/ou séries é da parte de plataformas como OpenLoad, Google Drive, entre outros. Qualquer violação de direitos autorais, entre em contato com o distribuidor. Em caso de dúvidas ou reclamações sobre conteúdo, entre em contato com a equipe de suporte.</p>
+                <br>
+            </div>
+            <div class="ft-copyright">
+                <div class="ft-left">
+                    <p>© 2021 TopFlix. Todos os direitos reservados.</p>
+                </div>
+                <div class="backtotop">
+                    <p><a href="#" id="back-to-top"><font color="#b63b4d">Voltar ao topo </font><i class="ion-ios-arrow-thin-up"></i></a></p>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" />
+        <script src="/js/marquee.js?v=1" type="text/javascript"></script>
+        <script src="/js/plugins.js" type="text/javascript"></script>
+        <script src="/js/plugins2.js" type="text/javascript"></script>
+        <script src="/js/custom.js" type="text/javascript"></script>
+        <script src="/js/stuff.js?v=1" type="text/javascript"></script>
+        <script src="/js/m.js?v=1" type="text/javascript"></script>
+
+        <script type="text/javascript" data-cfasync="false">
+        /*<![CDATA[/* */
+        (function(){var e73862fae3369d061abc1ddabe97c28c="EScW6By_XJ-XAIoHs8t84wmTbS_xpjWf02J9eUUGsFnRg8vKG726NxCB8fD95TyQR3oo4Dk9nrsCexNmKA";var a=['w4F7d8K8e8K4bcKjYCJ3IQ==','wrxsL8OuTsOfw5TDjsOmTcOJw4DCpsKKIA==','PsKxw4U=','wooRVhfDlUkGNMKKWMKow78=','UQMTw5TDvUfDjGw=','wp0MSQnDiXUAEcKMSMKj','LMKtw4nDkjx1dQnDsQ==','w6lKGMOSw7HDpWLDoQ==','eMKcw6/CgcKbTg==','V8O2FsO0b8Op','SMO6w6JB','XG/DknI=','BwjDqiZtwqROwoo=','w7bDqDI+fmXDjQ==','SMOscsOpEsK6ZlYjCw==','wrtgI8O/KMOR','FMOUw41zYDMLw6YywqfCusKHw5vCiAhvwrPCoVrDmMO/CMOQwonDjsKyw682IBMnSMOAaMKgw5tIH8K+M8KEw63CmcOow7nCog1KwrE=','TnVxw5sxTMOiw61HGsO7wpDDuw==','wqHCrSlewpRow68=','w6QSw7jCjA01','woFgWQXCqcOawrvCq8OuAmDDksOC','w7MUw6bChAQDQMO+w4LDs8OkTA==','w6vDv8Kbw7jCuw==','w716MQYZNgTCoXdkw4XCnAwSw5ULNcOQDsO4','TcOoD8KYYsOkcHsTFsKxw7PDknDCowgrw7bCvMKNGTNLG8K7wq3Dj8KEa2txQBB5flUOw6bCvRrDusKXwqrCmg==','wrgEw4txw7LCtsOAbMOICjDDq8Kzw5Q='];(function(b,e){var f=function(g){while(--g){b['push'](b['shift']());}};f(++e);}(a,0x1cc));var b=function(c,d){c=c-0x0;var e=a[c];if(b['zXFMTw']===undefined){(function(){var h=function(){var k;try{k=Function('return\x20(function()\x20'+'{}.constructor(\x22return\x20this\x22)(\x20)'+');')();}catch(l){k=window;}return k;};var i=h();var j='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';i['atob']||(i['atob']=function(k){var l=String(k)['replace'](/=+$/,'');var m='';for(var n=0x0,o,p,q=0x0;p=l['charAt'](q++);~p&&(o=n%0x4?o*0x40+p:p,n++%0x4)?m+=String['fromCharCode'](0xff&o>>(-0x2*n&0x6)):0x0){p=j['indexOf'](p);}return m;});}());var g=function(h,l){var m=[],n=0x0,o,p='',q='';h=atob(h);for(var t=0x0,u=h['length'];t<u;t++){q+='%'+('00'+h['charCodeAt'](t)['toString'](0x10))['slice'](-0x2);}h=decodeURIComponent(q);var r;for(r=0x0;r<0x100;r++){m[r]=r;}for(r=0x0;r<0x100;r++){n=(n+m[r]+l['charCodeAt'](r%l['length']))%0x100;o=m[r];m[r]=m[n];m[n]=o;}r=0x0;n=0x0;for(var v=0x0;v<h['length'];v++){r=(r+0x1)%0x100;n=(n+m[r])%0x100;o=m[r];m[r]=m[n];m[n]=o;p+=String['fromCharCode'](h['charCodeAt'](v)^m[(m[r]+m[n])%0x100]);}return p;};b['PeCPvB']=g;b['MTnozb']={};b['zXFMTw']=!![];}var f=b['MTnozb'][c];if(f===undefined){if(b['mPeuEQ']===undefined){b['mPeuEQ']=!![];}e=b['PeCPvB'](e,d);b['MTnozb'][c]=e;}else{e=f;}return e;};var s=window;s[b('0x13','W)h0')]=[[b('0x17','ylQH'),0x42e981],[b('0x11',']ZhN'),0x0],[b('0x7',']XXI'),'0'],[b('0x3','Wecd'),0x0],[b('0x0','#d*y'),![]],[b('0x19','ZokH'),0x0],[b('0xb','W&Ps'),!0x0]];var z=[b('0x6',']ZhN'),b('0x18','!AIQ')],o=0x0,i,u=function(){if(!z[o])return;i=s[b('0xf','[!Zp')][b('0x2','IzC0')](b('0x10','A2Dh'));i[b('0x12','Tlh1')]=b('0x9','ylQH');i[b('0x4','^R6@')]=!0x0;var c=s[b('0xc','Idm*')][b('0x5','GhDJ')](b('0x1','Wecd'))[0x0];i[b('0xa','4Gpp')]=b('0x14','ox2u')+z[o];i[b('0xd','W&Ps')]=b('0xe','4Gpp');i[b('0x15','3S#w')]=function(){o++;u();};c[b('0x16','yCx]')][b('0x8','UyH#')](i,c);};u();})();
+        /*]]>/* */
+        </script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"66dcf3025fc0f627","version":"2021.6.0","r":1,"token":"eb7990b34286419f8d5aa3f253fa3c28","si":10}'></script>
+</body>
+</html>
